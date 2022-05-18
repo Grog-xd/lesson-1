@@ -1,0 +1,25 @@
+mixin svg(name, style)
+  img(class=`${style}` src=`./assets/images/${name}.svg`)
+
+mixin png(name, style)
+  img(class=`${style}` src=`./assets/images/${name}.png`)
+
+mixin socialBtn(array, style)
+  ul
+    each value in array
+      li
+        a(href="#")
+          img(class=`${style}` src=`./assets/images/${value}.svg`)
+
+mixin socialOrangeBtn(array, style, styleUl)
+  ul(class=`${styleUl}`)
+    each value in array
+      li
+        a(href="#")
+          img(class=`${style}` src=`./assets/images/orange-${value}.svg`)
+
+
+mixin navHeader(array, style)
+    each value in array
+      li
+        a(class=`${style}` href='#') #{value}

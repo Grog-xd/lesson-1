@@ -1,0 +1,22 @@
+
+- const headerNav =  ['Каталог товаров', 'Доставка и оплата', 'Цены', 'Контакты']
+- const socialArray = ['vk', 'telegram', 'instagram', 'whatsapp']
+
+header
+  +png('logo')
+  a(href="#" class="header__burger")
+    +svg('burger-menu')
+  nav.header__nav
+    ul
+      +navHeader(headerNav, 'nav__item')
+  h6.header__phone +7 (812)
+    b  509 21 98
+  a.header__call(href="#") перезвоните мне
+  +socialBtn(socialArray, 'header__social')
+  .header__btns
+    a(href='#')
+      +svg('search')
+    a(href='#')
+      +svg('like')
+    a(href='#')
+      +svg('cart')

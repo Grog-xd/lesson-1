@@ -1,1 +1,43 @@
-
+header{
+  display: flex;
+  justify-content: space-between;
+  margin: 26px 62px;
+  height: 97px;
+  align-items: center;
+  text-align: center;
+  .header__burger{
+    margin-left: 52px;
+    margin-right: 31px;
+  }
+  .header__nav{
+    .nav__item{
+      @include text(16px, 700, $color-blue);
+      text-transform: uppercase;
+      margin-left: 35px;
+    }
+  }
+  .header__phone{
+    @include text(16px, 400, $color-blue);
+    margin-left: 56px;
+    margin-right: 70px;
+    & b{
+      @include text(16px, 700, $color-black)
+    }
+  }
+  .header__call{
+    @include text(14px, 700, #AE2236);
+    border-bottom: #AE2236 dotted 1px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    margin-right: 61px;
+  }
+  .header__social{
+    margin-left: 15px;
+  }
+  .header__btns{
+    margin-left: 60px;
+    & a{
+      margin-left: 16px;
+    }
+  }
+}

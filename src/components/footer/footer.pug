@@ -1,1 +1,28 @@
 
+-let catalogArray = ['Дымоходы','Камины','Дымососы','Силикат кальция','Печи для дома', 'Котлы', 'Печи для бани', 'Ещё']
+-let informationArray = ['Каталог', 'Полезное', 'Установка и монтаж', 'Контакты', 'Отзывы', 'Оплата и доставка', 'Ликвидация товара']
+- let socialFooterArray = ['vk', 'telegram', 'instagram', 'whatsapp']
+
+footer
+  .footer__catalog
+    h3 КАТАЛОГ
+    ul.footer__list
+      each value in catalogArray
+        li.footer__item
+          a(href='#') #{value}
+  .footer__information
+    h3 ИНФОРМАЦИЯ
+    ul.footer__list
+      each value in informationArray
+        li.footer__item
+          a(href='#') #{value}
+  .footer__working-hours
+    h3 ВРЕМЯ РАБОТЫ
+    .footer__time
+      +svg('clock')
+      p <span>пн-пт</span> 9:00 – 20:00   <span>сб-вс</span> 10:00 – 18:00
+    .footer__location
+      +svg('location')
+      p г. Санкт - Петербург ,ул. Тамбасова д.7
+    +socialBtn(socialFooterArray, 'footer__social')
+
