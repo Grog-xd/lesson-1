@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding:  0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+.red-line{
+  width: 74px;
+  height: 5px;
+  background-color: #E33E54;
+  margin-bottom: 11px;
+}
+
+
