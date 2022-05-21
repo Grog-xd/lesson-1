@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+  header{
+    margin: 26px 15px;
+    border-bottom: 1px solid #E5E5E5;
+    .header__logo{
+      width: 64px;
+      height: 62px;
+    }
+    .header__nav{
+      display: none;
+    }
+    .header__phone{
+      display: none;
+    }
+    .header__call{
+      display: none;
+    }
+    .header__social{
+      display: none;
+    }
+    .header__burger{
+      display: none;
+    }
+    .header__btns{
+      a:last-child{
+        display: initial;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px){
+  header{
+    margin: 16px 15px;
+    .header__btns{
+      a{
+        display: none;
+      }
+      a:nth-child(3){
+        display: initial;
+      }
+      a:nth-child(4){
+        display: initial;
+      }
+    }
+  }
+}

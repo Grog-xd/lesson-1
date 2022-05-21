@@ -1,6 +1,7 @@
 @import 'base/fonts';
 @import 'base/globals';
 
+
 @import 'helpers/functions';
 @import 'helpers/mixins';
 @import 'helpers/variables';
@@ -13,53 +14,79 @@ main{
   //margin-right: 351px;
   margin: 0 auto;
   max-width: 1160px;
-  & .heading{
+  .heading{
     @include text(60px, 700, $color-black);
     margin-top: 60px;
     margin-bottom: 42px;
   }
-  & .breadcrumbs{
+  .breadcrumbs{
     border-bottom: 1px solid #E5E5E5;
     border-top: 1px solid #E5E5E5;
     height: 48px;
     display: flex;
     align-items: center;
-    & .breadcrumbs__home{
+    flex-wrap: wrap;
+    a{
+      display: none;
+      &.breadcrumbs__this-page--mobile-active{
+        @include text(12px, 400, $color-blue);
+        &::after{
+          content: "";
+        }
+      }
+      &::after{
+        content: ">";
+        color: #4C858B;
+        margin-left: 8.5px;
+        margin-right: 7.5px;
+      }
+      &:first-child{
+        display: initial;
+      }
+      &:last-child{
+        display: initial;
+        &::after{
+          content: "";
+          margin-left: 0;
+        }
+      }
+    }
+    .breadcrumbs__home{
       @include text(12px, 400, #B1B1B1)
     }
-    & .breadcrumbs__icon{
+    .breadcrumbs__icon{
       margin-left: 8.5px;
       margin-right: 7.5px;
     }
-    & .breadcrumbs__this-page{
+    .breadcrumbs__this-page{
       @include text(12px, 400, $color-blue)
     }
   }
-  & .description{
+  .description{
     margin-top: 81px;
-    width: 1218px;
+    //width: 1218px;
     @include text(16px, 400, $color-black);
     line-height: 30px;
-    & b{
+    b{
       @include text(16px, 600, $color-red);
     }
   }
-  & .first-screen{
+  .first-screen{
     margin-top: 42px;
     display: flex;
     justify-content: space-between;
-    & .first-screen__text-block{
-      & h2{
+    .first-screen__text-block{
+      h2{
         @include text(40px, 600, $color-black);
         line-height: 63px;
         width: 629px;
         margin-bottom: 35px;
-        & b{
+        b{
           @include text(50px, 800, $color-red);
           text-transform: uppercase;
         }
       }
-      & .first-screen__advantages{
+      .first-screen__advantages{
         margin-left: 52px;
         list-style: disc;
         flex-direction: column;
@@ -67,13 +94,13 @@ main{
         align-items: start;
         width: 513px;
         height: 360px;
-        & li{
+        li{
           &::marker{
             font-size: 30px;
             color: $color-orange;
             line-height: 24px;
           }
-          & span{
+          span{
             @include text(16px, 400, $color-black);
 
           }
@@ -85,29 +112,29 @@ main{
       right: 300px;
     }
   }
-  & .process-work{
+  .process-work{
     margin-top: 38px;
-    & h2{
+    h2{
       @include text(40px, 600, $color-black);
       margin-bottom: 52px;
     }
-    & .process-work__list{
+    .process-work__list{
       display: flex;
       flex-direction: column;
       height: 285px;
       flex-wrap: wrap;
-      & .process-work__item{
+      .process-work__item{
         display: flex;
         height: 85px;
         align-items: center;
         margin-bottom: 10px;
-        & h1{
+        h1{
           @include text(70px, 700, $color-red);
           margin-top: 0;
           margin-bottom: 0;
           opacity: 0.2;
         }
-        & p{
+        p{
           @include text(16px, 400, $color-black);
           line-height: 30px;
           width: 535px;
@@ -116,83 +143,83 @@ main{
       }
     }
   }
-  & .advantages-block{
+  .advantages-block{
     margin-top: 83px;
-    & h2{
+    h2{
       @include text(40px, 600, $color-black)
     }
-    & p.advantages-block__description{
+    p.advantages-block__description{
       @include text(16px, 400, $color-black);
       margin-top: 54px;
       line-height: 30px;
     }
-    & .advantages-block__list{
+    .advantages-block__list{
       display: flex;
       justify-content: space-between;
-      margin-top: 50px;
-      & .advantages-block__item{
+      .advantages-block__item{
         width: 326px;
-        & h3{
+        margin-top: 50px;
+        h3{
           @include text(20px, 700, $color-black);
           margin-top: 37px;
         }
-        & p{
+        p{
           @include text(16px, 400, $color-black);
           line-height: 30px;
           margin-top: 12px;
           width: 372px;
-          & b{
+          b{
             @include text(16px, 600, $color-red)
           }
         }
       }
     }
   }
-  & .form-block{
+  .form-block{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-left: 58px;
-    & h1{
+    h1{
       @include text(50px, 800, $color-black);
       text-transform: uppercase;
       margin-bottom: 0;
       margin-top: 90px;
     }
-    & p{
+    p{
       @include  text(22px, 300, $color-black);
       margin-top: 11px;
     }
-    & .form-block__socials{
+    .form-block__socials{
       margin-right: 42px;
-      & .form-block__social{
+      .form-block__social{
         margin-left: 36px;
         margin-top: 38px;
         margin-bottom: 37px;
       }
     }
-    & form{
+    form{
       text-align: start;
       width: 866px;
       height: 260px;
       box-shadow: -1px -9px 28px 7px rgba(0, 0, 0, 0.16);
       padding: 53px 55px 61px 59px;
-      & h3{
+      h3{
         @include text(20px,500,$color-black);
-        & b{
+        b{
           @include text(20px, 700, $color-orange);
         }
       }
-      & p{
+      p{
         margin-top: 19px;
         @include text(16px,400,$color-black);
       }
-      & .form-block__inputs-section{
+      .form-block__inputs-section{
         display: flex;
         justify-content: space-between;
         margin-top: 24px;
-        & input{
+        input{
           border: 1px solid #E5E5E5;
           width: 240px;
           height: 56px;
@@ -200,7 +227,7 @@ main{
           outline: none;
           @include text(14px,500,#B1B1B1);
         }
-        & button{
+        button{
           width: 240px;
           height: 56px;
           background-color: #215359;
@@ -211,51 +238,53 @@ main{
       }
     }
   }
-  & .video-block{
+  .video-block{
     margin-top: 104px;
-    & h2{
+    h2{
       @include text(40px, 600, $color-black)
     }
-    & p{
+    p{
       @include text(16px, 400, $color-black);
       line-height: 30px;
       margin-top: 68px;
-      width: 1220px;
+      //width: 1220px;
     }
-    & .video-block__video-section{
+    .video-block__video-section{
       display: flex;
       justify-content: center;
       position: relative;
       top: 50px;
       left: 30px;
-      & .video-block__video-img{
+      .video-block__video-img{
         position: absolute;
         top: 49px;
         left: 185px;
       }
     }
   }
-  & .example-block{
+  .example-block{
     margin-top: 232px;
     margin-bottom: 126px;
-    & h2{
+    h2{
       @include text(40px, 600, $color-black)
     }
-    & p{
+    p{
       @include text(16px, 400, $color-black);
       line-height: 30px;
       margin-top: 68px;
-      width: 1220px;
+      //width: 1220px;
     }
-    & .example-block__list{
-      margin-top: 32px;
+    .example-block__list{
+      margin-top: 18px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 1220px;
-      & .example-block__item{
-        margin-top: 8px;
+      .example-block__item{
+        margin-top: 30px;
+        max-width: 282px;
+        height: 260px;
       }
     }
   }
 }
+@import "mediaMain";

@@ -6,8 +6,8 @@ header{
   align-items: center;
   text-align: center;
   .header__burger{
-    margin-left: 52px;
-    margin-right: 31px;
+    //margin-left: 52px;
+    //margin-right: 31px;
   }
   .header__nav{
     .nav__item{
@@ -18,9 +18,9 @@ header{
   }
   .header__phone{
     @include text(16px, 400, $color-blue);
-    margin-left: 56px;
-    margin-right: 70px;
-    & b{
+    //margin-left: 56px;
+    //margin-right: 70px;
+    b{
       @include text(16px, 700, $color-black)
     }
   }
@@ -29,15 +29,19 @@ header{
     border-bottom: #AE2236 dotted 1px;
     text-transform: uppercase;
     padding-bottom: 5px;
-    margin-right: 61px;
+    //margin-right: 61px;
   }
   .header__social{
     margin-left: 15px;
   }
   .header__btns{
-    margin-left: 60px;
-    & a{
+    //margin-left: 60px;
+    a{
       margin-left: 16px;
+    }
+    a:last-child{
+      display: none;
     }
   }
 }
+@import "mediaHeader";

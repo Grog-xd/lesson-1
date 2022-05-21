@@ -1,13 +1,14 @@
+
 footer{
   background-color:  #0C2F33;
   padding: 87px 330px 92px 351px;
   display: flex;
   justify-content: space-between;
 
-  & h3{
+  h3{
     @include text(22px, 700, $color-white)
   }
-  & a{
+  a{
     @include text(14px, 400, $color-white);
   }
   .footer__list{
@@ -15,33 +16,33 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     width: 355px;
-    & .footer__item{
+    .footer__item{
       margin-top: 18px;
       width: 148px;
     }
   }
   .footer__working-hours{
-    & .footer__time{
+    .footer__time{
       display: flex;
       margin-top: 16px;
     }
-    & .footer__location{
+    .footer__location{
       display: flex;
       margin-top: 16px;
     }
-    & .footer__social{
+    .footer__social{
       width: 20px;
       height: 20px;
       margin-right: 41px;
       margin-top: 37px;
     }
-    & p{
+    p{
       font-size: 14px;
       font-weight: 400;
       font-family: "Lato", sans-serif;
       color: $color-white;
       margin-left: 7.5px;
-      & span{
+      span{
         font-size: 14px;
         font-weight: 400;
         font-family: "Lato", sans-serif;
@@ -50,3 +51,5 @@ footer{
     }
   }
 }
+@import "mediaFooter";
+
