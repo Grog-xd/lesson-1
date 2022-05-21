@@ -28,3 +28,20 @@
     }
   }
 }
+
+@media (max-width: 320px){
+  header{
+    margin: 16px 15px;
+    .header__btns{
+      a{
+        display: none;
+      }
+      a:nth-child(3){
+        display: initial;
+      }
+      a:nth-child(4){
+        display: initial;
+      }
+    }
+  }
+}
