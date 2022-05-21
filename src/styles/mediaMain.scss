@@ -1,0 +1,168 @@
+@media (max-width: 768px) {
+  main {
+    max-width: 738px;
+    .heading{
+      @include text(45px, 700, $color-black);
+      margin-top: 56px;
+      margin-bottom: 30px;
+    }
+    .description{
+      margin-top: 60px;
+    }
+    .first-screen{
+      margin-top: 19px;
+      .first-screen__text-block{
+        h2{
+          margin-bottom: 21px;
+          @include text(30px, 600, $color-black);
+          line-height: 52px;
+          width: 436px;
+        }
+        b{
+          @include text(40px, 800, $color-red)
+        }
+      }
+      img{
+        display: none;
+      }
+      .first-screen__text-block{
+        .first-screen__advantages{
+          width: auto;
+        }
+      }
+    }
+    .process-work{
+      margin-top: 56px;
+      h2{
+        @include text(30px, 600, $color-black);
+        line-height: 37px;
+        margin-bottom: 30px;
+      }
+      .process-work__list{
+        .process-work__item{
+          p{
+            width: 319px;
+            @include text(14px, 400, $color-black);
+            line-height: 26px;
+            margin-left: 10px;
+          }
+          h1{
+            @include text(50px, 700, $color-red)
+          }
+        }
+      }
+    }
+    .advantages-block{
+      margin-top: 55px;
+      h2{
+        @include text(30px, 600, $color-black)
+      }
+      p.advantages-block__description{
+        margin-top: 37px;
+      }
+      .advantages-block__list{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 24px;
+        .advantages-block__item{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          width: auto;
+          margin-top: 27px;
+          h3{
+            @include text(18px, 700, $color-black)
+          }
+          p{
+            @include text(14px, 400, $color-black);
+            line-height: 26px;
+            width: 330px;
+          }
+          b{
+            @include text(14px, 600, $color-black);
+          }
+        }
+      }
+    }
+    .form-block{
+      margin-left: 0;
+      h1{
+        @include text(40px, 800, $color-black);
+        white-space: nowrap;
+        margin-top: 52px;
+      }
+      p{
+        @include text(16px, 300, $color-black)
+      }
+      .form-block__socials{
+        .form-block__social{
+          margin-top: 28px;
+          margin-bottom: 34px;
+        }
+      }
+      form{
+        width: auto;
+        height: 390px;
+        padding: 49px 50px 47px 59px;
+        text-align: center;
+        .form-block__inputs-section{
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 7px;
+          input{
+            width: 354px;
+            margin-top: 15px;
+            margin-left: 82px;
+            margin-right: 82px;
+          }
+          button{
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+   .video-block{
+     margin-top: 58px;
+     h2{
+       @include text(30px, 600, $color-black)
+     }
+     p{
+       margin-top: 34px;
+     }
+     .video-block__video-section{
+       top: 0;
+       left: 0;
+       .video-block__bg{
+         display: none;
+       }
+       .video-block__video-img{
+         position: static;
+         top: 0;
+         left: 0;
+         //width: 737px;
+         height: 419px;
+         margin-top:34px ;
+       }
+     }
+   }
+    .example-block{
+      margin-top: 56px;
+      margin-bottom: 56px;
+      h2{
+        @include text(30px, 600, $color-black)
+      }
+      p{
+        margin-top: 34px;
+      }
+      .example-block__list{
+        justify-content: start;
+        .example-block__item{
+          width: 226px;
+          height: 208px;
+
+        }
+      }
+    }
+  }
+}

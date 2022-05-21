@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+  footer{
+    padding: 0;
+    justify-content: center;
+    .footer__catalog{
+      display: none;
+    }
+    .footer__information{
+      display: none;
+    }
+    .footer__working-hours{
+      h3{
+        display: none;
+      }
+      .footer__time{
+        display: none;
+      }
+      .footer__location{
+        display: none;
+      }
+      .footer__social{
+        margin: 24px 20px 24px 20px;
+      }
+    }
+  }
+}
