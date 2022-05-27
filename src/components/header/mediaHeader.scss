@@ -22,7 +22,7 @@
       display: none;
     }
     .header__btns{
-      a:last-child{
+      button:last-child{
         display: initial;
       }
     }
@@ -33,13 +33,13 @@
   header{
     margin: 16px 15px;
     .header__btns{
-      a{
+      button{
         display: none;
       }
-      a:nth-child(3){
+      button:nth-child(3){
         display: initial;
       }
-      a:nth-child(4){
+      button:nth-child(4){
         display: initial;
       }
     }

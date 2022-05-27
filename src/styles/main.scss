@@ -14,6 +14,7 @@ main{
   //margin-right: 351px;
   margin: 0 auto;
   max-width: 1160px;
+  //max-width: 1210px;
   .heading{
     @include text(60px, 700, $color-black);
     margin-top: 60px;
@@ -128,7 +129,7 @@ main{
         height: 85px;
         align-items: center;
         margin-bottom: 10px;
-        h1{
+        h3{
           @include text(70px, 700, $color-red);
           margin-top: 0;
           margin-bottom: 0;
@@ -159,7 +160,7 @@ main{
       .advantages-block__item{
         width: 326px;
         margin-top: 50px;
-        h3{
+        .advantages-block__item-title{
           @include text(20px, 700, $color-black);
           margin-top: 37px;
         }
@@ -168,7 +169,7 @@ main{
           line-height: 30px;
           margin-top: 12px;
           width: 372px;
-          b{
+          strong{
             @include text(16px, 600, $color-red)
           }
         }
@@ -181,7 +182,7 @@ main{
     align-items: center;
     text-align: center;
     margin-left: 58px;
-    h1{
+    h2{
       @include text(50px, 800, $color-black);
       text-transform: uppercase;
       margin-bottom: 0;
@@ -205,9 +206,9 @@ main{
       height: 260px;
       box-shadow: -1px -9px 28px 7px rgba(0, 0, 0, 0.16);
       padding: 53px 55px 61px 59px;
-      h3{
+      p{
         @include text(20px,500,$color-black);
-        b{
+        strong{
           @include text(20px, 700, $color-orange);
         }
       }

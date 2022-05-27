@@ -46,7 +46,7 @@
             line-height: 26px;
             margin-left: 10px;
           }
-          h1{
+          h3{
             @include text(50px, 700, $color-red)
           }
         }
@@ -257,7 +257,7 @@
       }
     }
     .form-block{
-      h1{
+      h2{
         margin-top: 41px;
         @include text(22px, 800, $color-black);
         line-height: 26px;
