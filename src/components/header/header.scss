@@ -8,9 +8,12 @@ header{
   .header__burger{
     //margin-left: 52px;
     //margin-right: 31px;
+    border: none;
+    background: $color-white;
+    cursor: pointer;
   }
   .header__nav{
-    .nav__item{
+    .header__nav-item{
       @include text(16px, 700, $color-blue);
       text-transform: uppercase;
       margin-left: 35px;
@@ -36,10 +39,13 @@ header{
   }
   .header__btns{
     //margin-left: 60px;
-    a{
+    button{
       margin-left: 16px;
+      border: none;
+      background: $color-white;
+      cursor: pointer;
     }
-    a:last-child{
+    button:last-child{
       display: none;
     }
   }
