@@ -77,7 +77,7 @@
           p{
             @include text(14px, 400, $color-black);
             line-height: 26px;
-            width: 330px;
+            max-width: 330px;
           }
           b{
             @include text(14px, 600, $color-black);
@@ -102,8 +102,8 @@
         }
       }
       form{
-        width: auto;
-        height: 390px;
+        width: 100vw;
+        height: 400px;
         padding: 49px 50px 47px 59px;
         text-align: center;
         .form-block__inputs-section{
@@ -111,10 +111,8 @@
           flex-wrap: wrap;
           margin-top: 7px;
           input{
-            width: 354px;
+            width: 405px;
             margin-top: 15px;
-            margin-left: 82px;
-            margin-right: 82px;
           }
           button{
             margin-top: 25px;
@@ -140,7 +138,7 @@
          position: static;
          top: 0;
          left: 0;
-         //width: 737px;
+         width: 100vw;
          height: 419px;
          margin-top:34px ;
        }
@@ -313,7 +311,6 @@
       }
       .video-block__video-section{
         .video-block__video-img{
-          width: 287px;
           height: 163px;
         }
       }
@@ -331,13 +328,22 @@
       }
       .example-block__list{
         margin-top: 0;
-        justify-content: space-between;
+        justify-content: center;
         .example-block__item{
           margin-top: 16px;
           width: 130px;
           height: 120px;
         }
       }
+    }
+  }
+}
+
+
+@media (max-width: 1500px){
+  .first-screen{
+    .first-screen__img-block{
+      overflow: hidden;
     }
   }
 }

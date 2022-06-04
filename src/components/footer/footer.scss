@@ -1,9 +1,8 @@
 
 footer{
   background-color:  #0C2F33;
-  padding: 87px 330px 92px 351px;
-  display: flex;
-  justify-content: space-between;
+  padding: 83px 15px 92px 15px;
+
 
   h3{
     @include text(22px, 700, $color-white)
@@ -15,11 +14,17 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 355px;
+    max-width: 355px;
     .footer__item{
       margin-top: 18px;
       width: 148px;
     }
+  }
+  .footer__container{
+    max-width: 1290px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
   .footer__working-hours{
     .footer__time{
