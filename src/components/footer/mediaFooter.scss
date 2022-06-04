@@ -1,7 +1,9 @@
 @media (max-width: 768px) {
   footer{
     padding: 0;
-    justify-content: center;
+    .footer__container{
+      justify-content: center;
+    }
     .footer__catalog{
       display: none;
     }
