@@ -129,13 +129,13 @@ main{
         height: 85px;
         align-items: center;
         margin-bottom: 10px;
-        h3{
+        .process-work__item-num{
           @include text(70px, 700, $color-red);
           margin-top: 0;
           margin-bottom: 0;
           opacity: 0.2;
         }
-        p{
+        .process-work__item-text{
           @include text(16px, 400, $color-black);
           line-height: 30px;
           max-width: 32vw;
